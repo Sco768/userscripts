@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         no new reddit button
 // @namespace    http://reddit.com/
-// @version      0.1
+// @version      0.2
 // @description  Hide "get new reddit" button
 // @author       Sco7689
 // @match        https://*.reddit.com/*
@@ -23,4 +23,5 @@ function addGlobalStyle(css) {
 (function() {
     'use strict';
     addGlobalStyle('.redesign-beta-optin { display: none !important; }');
+    addGlobalStyle('.onboardingbar { display: none !important; }');
 })();
